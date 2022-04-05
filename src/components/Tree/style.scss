@@ -1,0 +1,33 @@
+.tree-container {
+  width: 200px;
+
+  button {
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 18px;
+
+    &.open:before {
+      content: '-';
+      width: 1em;
+    }
+
+    &.closed:before {
+      content: '+';
+      width: 1em;
+    } 
+  
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .tree {
+    list-style-type: none;
+    padding-left: 5px;
+    margin: 0;
+  }
+  
+}
